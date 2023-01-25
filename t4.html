@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        .class{
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Everyone!</h1>
+    <button onclick="changeFunc();"> Click Here!</button>
+    <main>
+        <h1>Main Container</h1>
+        <p>This paragraph is dedicated for main container.</p>
+    </main>
+    <script type="text/javascript">
+        changeFunc = function(){
+            var MainContent;
+            document.body.style.backgroundColor = "#87CEEB";
+            MainContent = document.querySelector('main');
+            MainContent.innerHTML = "<h3>I am Siddharth.</h3>";
+            MainContent.style.height = "50px";
+            MainContent.style.widows = "50%";
+            MainContent.style.backgroundColor = "#808080";
+        }
+    </script>
+</body>
+</html>
